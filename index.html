@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Sri Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Email Configuration -->
+    <script src="config.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1 class="brand-name">Bhavya Sri</h1>
+            </div>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#participations" class="nav-link">Participations</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text"> 
+                        <h2 class="hero-title"><span class="shimmer-text">Hi, I am NUKALA BHAVYA SRI</span></h2>
+                        <div class="hero-roles">
+                            <span class="role-text">I am a</span>
+                            <span class="blur-text" id="blurText">Web Developer</span>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="Nukala_Bhavya_Sri_resume.pdf" class="btn btn-secondary" id="downloadResume" download="Nukala_Bhavya_Sri_resume.pdf">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="my image.png" alt="Bhavya Sri - Professional headshot" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p class="about-text">Passionate tech enthusiast with hands-on experience in Java, Python, and OOP concepts. Skilled in SQL, Oracle, and building responsive web pages using HTML/CSS. Proficient with VS Code, MySQL, Microsoft Office, and Power BI for data visualization and reporting. Quick learner, problem-solver, and eager to grow in software development and data analysis.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"></span>
+                            <span>Java & Python</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"></span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"></span>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"></span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="weather.jpg" alt="Weather Wizard app screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Wizard</h3>
+                            <p class="project-description">Fetches and displays real-time weather for any city with an intuitive interface.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="https://bhavyasri-25.github.io/Weather-wizard/" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="cc.jpeg" alt="Calculator & Currency Converter app screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Calculator & Currency Converter</h3>
+                            <p class="project-description">Performs arithmetic operations and real-time conversion between popular global currencies.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="https://bhavyasri-25.github.io/Calculator-Currency-convertor/" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=center" alt="To Do List app screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">To Do List</h3>
+                            <p class="project-description">A dynamic task manager with edit options, due dates, priorities, MySQL storage, and smart filters.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <a href="https://github.com/BhavyaSri-25/Todo-list" class="project-link">View on GitHub →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="participations" class="participations">
+            <div class="container">
+                <h2 class="section-title">Participations & Workshops</h2>
+                <div class="participations-grid">
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="python.jpg" alt="Python Workshop">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                                </div>
+                                <h3>Python Workshop</h3>
+                            </div>
+                            <p>Completed a 6-Days Python Workshop on "Empowering Innovation Through Code" of Tech Parenthesis.</p>
+                            <a href="Python workshop.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="excelr.webp" alt="Live Training Programs">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo powerbi-logo">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#F2C811">
+                                        <path d="M10 2v20H8V2h2zm4 4v16h-2V6h2zm4 6v10h-2V12h2z"/>
+                                    </svg>
+                                </div>
+                                <h3>Live Training Programs</h3>
+                            </div>
+                            <p>Attended 30 hours Live Training Programs on "Cracking Coding Interviews: The Complete Guide" and "Business Intelligence Using Advanced Excel & Power BI" by Excel R.</p>
+                            <a href="Live Training Programs.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="ai.jpeg" alt="AI & Power BI Workshops">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo ai-logo">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#00D4AA">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                    </svg>
+                                </div>
+                                <h3>AI & Power BI Workshops</h3>
+                            </div>
+                            <p>Attended a 1-Day workshop on "ChatGPT & AI in Microsoft Office" and 2-days workshop on "AI Dashboards using Microsoft Power BI" of Skill Nation.</p>
+                            <a href="ChatGPT & AI.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="nlp.webp" alt="National Level Technical Event">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo trophy-logo">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#FFD700">
+                                        <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20.38C20.77 4 21.08 4.32 21.08 4.71C21.08 4.79 21.06 4.87 21.02 4.94L19.27 9.5C19.1 9.86 18.74 10.09 18.35 10.09H17V11C17 12.1 16.1 13 15 13H9C7.9 13 7 12.1 7 11V10.09H5.65C5.26 10.09 4.9 9.86 4.73 9.5L2.98 4.94C2.82 4.55 3.01 4.1 3.4 3.94C3.47 3.91 3.55 3.9 3.62 3.9H7M9 3V11H15V3H9M12 14L13.5 17H10.5L12 14Z"/>
+                                    </svg>
+                                </div>
+                                <h3>National Level Technical Event</h3>
+                            </div>
+                            <p>Participated in A National Level Technical Event for Paper Presentation in "KITES-2K25".</p>
+                            <a href="KITES-2K25.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="hackathon.jpg" alt="Hackathon Event">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo code-logo">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#6366F1">
+                                        <path d="M8.5 12L5.27 8.77L3.86 10.18L8.5 14.82L20.5 2.82L19.09 1.41L8.5 12Z"/>
+                                        <path d="M9.4 16.6L4.8 12L9.4 7.4L8 6L2 12L8 18L9.4 16.6Z"/>
+                                        <path d="M14.6 16.6L19.2 12L14.6 7.4L16 6L22 12L16 18L14.6 16.6Z"/>
+                                    </svg>
+                                </div>
+                                <h3>Hackathon Event</h3>
+                            </div>
+                            <p>Participated in the Hackathon event in TARANG 2K25 organized by SRIT, Anantapur.</p>
+                            <a href="TARANG-2K25.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="participation-card">
+                        <div class="participation-image">
+                            <img src="oracle.jpg" alt="Oracle Database Course">
+                        </div>
+                        <div class="participation-content">
+                            <div class="participation-header">
+                                <div class="participation-logo oracle-logo">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
+                                </div>
+                                <h3>Oracle Database Course</h3>
+                            </div>
+                            <p>Completed a course on Oracle(SQL/PLSQL) RDBMS.</p>
+                            <a href="Oracle certificate.jpg" class="project-link">View Certificate →</a>
+                        </div>
+                    </div>
+                      
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience & Internships</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-date">May 2025 - June 2025</div>
+                        <div class="experience-content">
+                            <h3>Web Development Intern</h3>
+                            <p class="company">Skill Dzire</p>
+                            <p>Completed a Web Development internship and learnt front-end technologies: HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-date">May 2025</div>
+                        <div class="experience-content">
+                            <h3>AI & Prompt Engineering Intern</h3>
+                            <p class="company">Vault Of Codes</p>
+                            <p>Completed AI & Prompt Engineering internship and gained knowledge of prompt engineering techniques and AI applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>B-Tech: Computer Science and Artificial Intelligence</h3>
+                            <p>St. Johns College of Engineering and Technology</p>
+                            <span class="education-status">Pursuing</span>
+                        </div>
+                        <div class="timeline-node">
+                            <div class="node-icon">🎓</div>
+                        </div>
+                        <div class="timeline-date">2022 - 2026</div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-node">
+                            <div class="node-icon">📚</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Intermediate</h3>
+                            <p>Dr. Jyothirmayi junior college, Adoni</p>
+                            <span class="education-status">Completed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Secondary School of Certificate (SSC)</h3>
+                            <p>Sri Vivekananda EM High School, Adoni</p>
+                            <span class="education-status">Completed</span>
+                        </div>
+                        <div class="timeline-node">
+                            <div class="node-icon">📖</div>
+                        </div>
+                        <div class="timeline-date">2020</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="java">
+                        <div class="skill-icon java-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                        </div>
+                        <span class="skill-name">Java</span>
+                        <p class="skill-description">Object-oriented programming and enterprise applications</p>
+                    </div>
+                    <div class="skill-item" data-skill="python">
+                        <div class="skill-icon python-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                        </div>
+                        <span class="skill-name">Python</span>
+                        <p class="skill-description">Data analysis, web development, and automation</p>
+                    </div>
+                    <div class="skill-item" data-skill="html">
+                        <div class="skill-icon html-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                        </div>
+                        <span class="skill-name">HTML</span>
+                        <p class="skill-description">Semantic markup and web structure</p>
+                    </div>
+                    <div class="skill-item" data-skill="css">
+                        <div class="skill-icon css-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                        </div>
+                        <span class="skill-name">CSS</span>
+                        <p class="skill-description">Responsive design and modern styling</p>
+                    </div>
+                    <div class="skill-item" data-skill="javascript">
+                        <div class="skill-icon js-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                        </div>
+                        <span class="skill-name">JavaScript</span>
+                        <p class="skill-description">Interactive web applications and DOM manipulation</p>
+                    </div>
+                    <div class="skill-item" data-skill="sql">
+                        <div class="skill-icon sql-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+                        </div>
+                        <span class="skill-name">SQL</span>
+                        <p class="skill-description">Database queries and data management</p>
+                    </div>
+                    <div class="skill-item" data-skill="oracle">
+                        <div class="skill-icon oracle-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
+                        </div>
+                        <span class="skill-name">Oracle</span>
+                        <p class="skill-description">Enterprise database solutions</p>
+                    </div>
+                    <div class="skill-item" data-skill="powerbi">
+                        <div class="skill-icon powerbi-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="#F2C811">
+                                <path d="M10 2v20H8V2h2zm4 4v16h-2V6h2zm4 6v10h-2V12h2z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Power BI</span>
+                        <p class="skill-description">Business intelligence and data visualization</p>
+                    </div>
+                    <div class="skill-item" data-skill="mysql">
+                        <div class="skill-icon mysql-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
+                        </div>
+                        <span class="skill-name">MySQL</span>
+                        <p class="skill-description">Relational database management</p>
+                    </div>
+                    <div class="skill-item" data-skill="vscode">
+                        <div class="skill-icon vscode-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                        </div>
+                        <span class="skill-name">VS Code</span>
+                        <p class="skill-description">Code editing and development environment</p>
+                    </div>
+                    <div class="skill-item" data-skill="office">
+                        <div class="skill-icon office-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="#D83B01">
+                                <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zM12 4.5L19.5 8 12 11.5 4.5 8 12 4.5zM4 9.5l7 3.5v7l-7-3.5v-7zm16 0v7l-7 3.5v-7l7-3.5z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">MS Office</span>
+                        <p class="skill-description">Document creation and productivity tools</p>
+                    </div>
+                    <div class="skill-item" data-skill="flask">
+                        <div class="skill-icon flask-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+                        </div>
+                        <span class="skill-name">Flask</span>
+                        <p class="skill-description">Python web framework for backend development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect!</h3>
+                        <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>bhavyasri744@email.com</span>
+                            </div>
+                            <!--<div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+91 9876543210</span>
+                            </div>-->
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Adoni, Kurnool district, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="formMessage" class="form-message"></div>
+                        <p class="privacy-note">Your information will be kept private and secure.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nukalabhavyasri/" target="_blank" class="social-link linkedin-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/BhavyaSri-25" target="_blank" class="social-link github-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:bhavyasri744@gmail.com" class="social-link email-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Nukala Bhavya Sri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+        }
+        
+        // Shiny Text Effect for Name
+        class ShinyText {
+            constructor(element, options = {}) {
+                this.element = element;
+                this.text = element.textContent;
+                this.disabled = options.disabled || false;
+                this.speed = options.speed || 3;
+                this.className = options.className || '';
+                
+                if (!this.disabled) {
+                    this.init();
+                }
+            }
+            
+            init() {
+                this.element.innerHTML = '';
+                this.element.classList.add('shiny-text', this.className);
+                
+                for (let i = 0; i < this.text.length; i++) {
+                    const span = document.createElement('span');
+                    span.textContent = this.text[i];
+                    span.style.animationDelay = `${i * 0.1}s`;
+                    this.element.appendChild(span);
+                }
+            }
+        }
+        
+        // Initialize Shiny Text (preserve existing gradient effect)
+        // The shimmer-text class already handles the gradient animation
+        
+        // Blur-to-Clear Text Animation for Skills
+        class BlurTextCycle {
+            constructor(element, options = {}) {
+                this.element = element;
+                this.texts = options.texts || ['Web Developer', 'Python Programmer', 'Data Analyst', 'Tech Enthusiast', 'Problem Solver'];
+                this.blurDuration = options.blurDuration || 600;
+                this.clearDuration = options.clearDuration || 2000;
+                this.fadeDuration = options.fadeDuration || 400;
+                
+                this.currentIndex = 0;
+                this.isAnimating = false;
+                
+                // Check for reduced motion preference
+                this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                
+                this.init();
+            }
+            
+            init() {
+                if (this.prefersReducedMotion) {
+                    // Just show the first text without animation
+                    this.element.textContent = this.texts[0];
+                    return;
+                }
+                
+                // Start the animation cycle after hero animations
+                setTimeout(() => {
+                    this.startCycle();
+                }, 2500);
+            }
+            
+            startCycle() {
+                this.animateText();
+            }
+            
+            animateText() {
+                if (this.isAnimating || this.prefersReducedMotion) return;
+                
+                this.isAnimating = true;
+                const currentText = this.texts[this.currentIndex];
+                
+                // Phase 1: Start blurred
+                this.element.classList.remove('blur-clear', 'blur-fade');
+                this.element.classList.add('blur-start');
+                this.element.textContent = currentText;
+                
+                // Phase 2: Clear the blur
+                setTimeout(() => {
+                    this.element.classList.remove('blur-start');
+                    this.element.classList.add('blur-clear');
+                }, 100);
+                
+                // Phase 3: Hold clear state
+                setTimeout(() => {
+                    // Phase 4: Fade out
+                    this.element.classList.remove('blur-clear');
+                    this.element.classList.add('blur-fade');
+                    
+                    // Move to next text
+                    setTimeout(() => {
+                        this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+                        this.isAnimating = false;
+                        
+                        // Continue cycle
+                        setTimeout(() => {
+                            this.animateText();
+                        }, 300);
+                    }, this.fadeDuration);
+                }, this.clearDuration);
+            }
+        }
+        
+        // Initialize Blur Text Animation
+        const blurElement = document.getElementById('blurText');
+        if (blurElement) {
+            new BlurTextCycle(blurElement, {
+                texts: ['Web Developer', 'Python Programmer', 'Data Analyst', 'Tech Enthusiast', 'Problem Solver'],
+                blurDuration: 600,
+                clearDuration: 2000,
+                fadeDuration: 400
+            });
+        }
+        
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Section Visibility Animation
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Initialize all section animations
+        function initializeAnimations() {
+            // Add animate-in class to sections that should animate on scroll
+            const sectionsToAnimate = document.querySelectorAll('#about, #projects, #participations, #experience, #education, #skills, #contact');
+            sectionsToAnimate.forEach(section => {
+                section.classList.add('animate-in');
+                observer.observe(section);
+            });
+            
+            // Add footer animation
+            const footer = document.querySelector('.footer');
+            if (footer) {
+                footer.classList.add('animate-in');
+                observer.observe(footer);
+            }
+        }
+        
+        // Initialize animations when DOM is ready
+        initializeAnimations();
+    </script>
+    
+    <!-- Email Handler -->
+    <script src="email-handler.js"></script>
+</body>
+</html>
