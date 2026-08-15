@@ -884,6 +884,7 @@ transform: scale(1.05);
 }
 
 .about-text {
+    text-align: justify;
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: 3rem;
